@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blast Off Games</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
+    <div class="top-bar">
+      <a href="privacy-policy.html" id="privacy-policy-link">Privacy Policy</a>
+    </div>
     <nav>
-      <ul>
+      <ul id="navigation-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#games">Games</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
       </ul>
     </nav>
   </header>
@@ -23,7 +26,6 @@
     <section id="home">
       <h1>Welcome to Blast Off Games</h1>
       <p>Your gateway to thrilling gaming experiences!</p>
-      <a href="privacy-policy.html" class="button">Privacy Policy</a>
     </section>
 
     <section id="games">
@@ -39,26 +41,31 @@
       <h2>About Us</h2>
       <p>Blast Off Games is a premier game development company committed to delivering captivating gaming experiences. We strive to push the boundaries of innovation and create memorable adventures for players worldwide.</p>
     </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <br>
-        <input type="submit" value="Submit">
-      </form>
-    </section>
   </main>
 
   <footer>
     <p>&copy; 2023 Blast Off Games. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Function to handle click events on the navigation menu items
+    function handleMenuClick(event) {
+      event.preventDefault(); // Prevent default link behavior
+      var target = event.target.getAttribute("href"); // Get the href attribute value
+      var section = document.querySelector(target); // Find the corresponding section element
+      if (section) {
+        window.scrollTo({
+          top: section.offsetTop,
+          behavior: "smooth"
+        });
+      }
+    }
+
+    // Attach event listeners to the navigation menu items
+    var menuItems = document.querySelectorAll("#navigation-menu a");
+    menuItems.forEach(function(item) {
+      item.addEventListener("click", handleMenuClick);
+    });
+  </script>
 </body>
 </html>
