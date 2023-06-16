@@ -1,0 +1,165 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+ /* Navigation styles */
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .nav li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links {
+    text-decoration: none;
+    color: #fff; /* Set the text color to white */
+    background-color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+  
+  .nav-links:hover {
+    background-color: #555;
+  }
+  
+  .nav-links:focus,
+  .nav-links:active {
+    outline: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Remove underline for <a> tags */
+    color: #fff; /* Set the text color to white */
+  }
+  
+  .main {
+    padding: 20px;
+  }
+  
+  .game-details {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .game-details img {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .game-details h1 {
+    font-size: 24px;
+  }
+  
+  .game-details h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .game-details p {
+    margin-bottom: 15px;
+  }
+  
+  .game-details ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+  }
+  
+  .game-details ul li {
+    margin-top: 5px;
+  }
+  
+  .game-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .screenshots {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .screenshot-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .screenshot-container img {
+    max-width: 300px;
+    padding-bottom: 20px;
+  }
+  
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 600px) {
+    .logo img {
+      width: 80px;
+    }
+  
+    .nav-links li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .footer-links li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  
