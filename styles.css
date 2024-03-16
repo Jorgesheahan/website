@@ -1,0 +1,252 @@
+/* styles.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Top bar styling */
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+.topbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.topbar li {
+    margin-right: 20px;
+}
+
+.topbar li:last-child {
+    margin-right: 0;
+}
+
+.topbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em; /* Set font size for top bar items */
+    padding: 5px 10px; /* Add padding around the text */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.topbar a:hover,
+.topbar a:active {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighter background color on hover and click */
+}
+
+.topbar img {
+    width: 40px; /* Set width of the logo to a specific size */
+    height: auto;
+}
+
+/* Main content styling */
+main {
+    text-align: center;
+    padding-top: 20px;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.Title {
+    padding: 20px;
+}
+
+.About {
+    background-color: #f0f0f0; /* Change to your preferred background color */
+    padding: 50px; /* Adjust padding as needed */
+    text-align: left;
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space items evenly */
+    align-items: flex-start; /* Align items to the start (top) */
+}
+
+.About h2 {
+    font-size: 24px;
+    color: #333; /* Change header color if needed */
+}
+
+.AboutContent {
+    flex-grow: 1;
+}
+
+.About p {
+    font-size: 16px;
+    color: #666; /* Change paragraph color if needed */
+    max-width: 600px; /* Set your preferred max-width */
+    padding-top: 10px;
+}
+
+.About img {
+    max-width: 40%; /* Set your preferred max-width for the image */
+    height: auto; /* Maintain aspect ratio */
+    align-self: center;
+}
+
+.Software {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.Software h2 {
+    font-size: 24px;
+    color: #333; /* Change header color if needed */
+    text-align: left;
+}
+
+.Software img {
+    max-width: 400px;
+    height: auto;
+}
+
+.Software ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Software li {
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.Products {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+
+.Product {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #333;
+    width: fit-content;
+    height: fit-content;
+}
+
+.Product a {
+    padding: 5px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 10px;
+    flex-direction: column
+}
+
+.Product p {
+    padding: 10px;
+    color: #fff;
+}
+
+.Product a:hover {
+    background-color: #444; /* Change background color on hover */
+}
+  
+.Product img {
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.privacy-policy {
+    text-align: center;
+    padding: 10px;
+    max-width: 600px;
+}
+
+.privacy-policy ol {
+    list-style-type: none;
+}
+
+.privacy-policy p {
+    padding-left: 10px;
+}
+
+.privacy-policy h2 {
+    padding-bottom: 10px;
+    padding-top: 2px;
+}
+
+.privacy-contact {
+    list-style-type: none;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0px;
+    text-align: center; /* Center align footer content */
+    width: 100%; /* Occupy full width of the viewport */
+    bottom: 0; /* Align to the bottom */
+}
+
+footer section {
+    padding: 10px;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-media p {
+    font-size: 1em;
+    padding-bottom: 10px;
+    color: #868686;
+}
+
+.social-media a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.social-media img {
+    width: 12px;
+    height: auto;
+    margin-right: 5px;
+}
+
+/* Move copyright to footer */
+.footer-copyright {
+    margin-top: 20px; /* Add some space between bottom bar and copyright */
+}
