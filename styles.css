@@ -93,7 +93,7 @@ p {
 .About p {
     font-size: 16px;
     color: #666; /* Change paragraph color if needed */
-    max-width: 600px; /* Set your preferred max-width */
+    max-width: 1200px; /* Set your preferred max-width */
     padding-top: 10px;
 }
 
