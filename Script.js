@@ -22,4 +22,24 @@ function AddProductObject(ProductName){
 
 }
 
+// Image Selector
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.image-container img');
+    let currentIndex = 0;
 
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
+        });
+    }
+
+    document.getElementById('prev').addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+        showImage(currentIndex);
+    });
+
+    document.getElementById('next').addEventListener('click', () => {
+        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+        showImage(currentIndex);
+    });
+});
